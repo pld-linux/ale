@@ -1,12 +1,12 @@
 Summary:	Anti-Lamenessing Engine
 Summary(pl):	Anti-Lamenessing Engine - silnik poprawiaj±cy zdjêcia
 Name:		ale
-Version:	0.7.2
+Version:	0.7.3
 Release:	1
 License:	GPL v2+
 Group:		Applications/Graphics
 Source0:	http://auricle.dyndns.org/ALE/download/%{name}-%{version}.tar.gz
-# Source0-md5:	d4a4e474ea4ceef2278f36019ac4daf8
+# Source0-md5:	d1dc3a83ec2beec1c129f3a059819f58
 Patch0:		%{name}-makefile.patch
 URL:		http://auricle.dyndns.org/ALE/
 BuildRequires:	ImageMagick-devel

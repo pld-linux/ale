@@ -1,5 +1,5 @@
 Summary:	Anti-Lamenessing Engine
-Summary(pl.UTF-8):   Anti-Lamenessing Engine - silnik poprawiający zdjęcia
+Summary(pl.UTF-8):	Anti-Lamenessing Engine - silnik poprawiający zdjęcia
 Name:		ale
 Version:	0.8.4
 Release:	1

@@ -1,5 +1,5 @@
 Summary:	Anti-Lamenessing Engine
-Summary(pl):	Anti-Lamenessing Engine - silnik poprawiaj±cy zdjêcia
+Summary(pl.UTF-8):   Anti-Lamenessing Engine - silnik poprawiajÄ…cy zdjÄ™cia
 Name:		ale
 Version:	0.8.4
 Release:	1
@@ -18,10 +18,10 @@ ALE is a free software program that renders high-fidelity images of
 real scenes by aligning and combining many similar images from a
 camera or scanner.
 
-%description -l pl
-ALE to wolnodostêpny program tworz±cy wysokiej jako¶ci obrazy
-prawdziwych scen poprzez wyrównywanie i ³±czenie wielu podobnych
-obrazów z aparatu lub skanera.
+%description -l pl.UTF-8
+ALE to wolnodostÄ™pny program tworzÄ…cy wysokiej jakoÅ›ci obrazy
+prawdziwych scen poprzez wyrÃ³wnywanie i Å‚Ä…czenie wielu podobnych
+obrazÃ³w z aparatu lub skanera.
 
 %prep
 %setup -q

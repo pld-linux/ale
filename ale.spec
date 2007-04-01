@@ -1,12 +1,12 @@
 Summary:	Anti-Lamenessing Engine
 Summary(pl.UTF-8):	Anti-Lamenessing Engine - silnik poprawiający zdjęcia
 Name:		ale
-Version:	0.8.4
+Version:	0.8.7
 Release:	1
 License:	GPL v2+
 Group:		Applications/Graphics
 Source0:	http://auricle.dyndns.org/ALE/download/%{name}-%{version}.tar.gz
-# Source0-md5:	9a9270a8017da2bf8e68cdaf03a5e07c
+# Source0-md5:	d9e9aaf7896cfa74e8d75159e1ee2817
 URL:		http://auricle.dyndns.org/ALE/
 BuildRequires:	ImageMagick-devel >= 1:6.2.4.0
 BuildRequires:	fftw3-devel
@@ -27,6 +27,7 @@ obrazów z aparatu lub skanera.
 %setup -q
 
 %build
+%configure
 %{__make} \
 	FFTW=1 \
 	IMAGEMAGICK=1 \
@@ -36,14 +37,14 @@ obrazów z aparatu lub skanera.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
 
-install ale $RPM_BUILD_ROOT%{_bindir}
+%{__make} install \
+        DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changelog README
+%doc ChangeLog README AUTHORS
 %attr(755,root,root) %{_bindir}/*

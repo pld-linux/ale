@@ -28,12 +28,7 @@ obrazów z aparatu lub skanera.
 
 %build
 %configure
-%{__make} \
-	FFTW=1 \
-	IMAGEMAGICK=1 \
-	OPT_CFLAGS="%{rpmcflags}" \
-	CC="%{__cc}" \
-	CXX="%{__cxx}"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
